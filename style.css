@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1120;
+    color: #f1f5f9;
+    line-height: 1.6;
+}
+
+/* Colors */
+span {
+    color: #38bdf8;
+}
+
+/* Navigation */
+header {
+    background: #111827;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 28px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #38bdf8;
+}
+
+/* Home Section */
+.hero {
+    min-height: 85vh;
+    padding: 60px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.welcome {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 5vw, 55px);
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero h3 {
+    color: #a78bfa;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.hero-text > p:not(.welcome) {
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #38bdf8;
+    color: #0b1120;
+    padding: 12px 22px;
+    margin: 5px 8px 5px 0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #a78bfa;
+    transform: translateY(-3px);
+}
+
+.btn.outline {
+    background: transparent;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+}
+
+/* Profile Circle */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.circle {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #38bdf8, #8b5cf6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 50px #38bdf833;
+}
+
+.circle span {
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+/* Common Sections */
+.section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+.section > p {
+    max-width: 700px;
+    margin: auto auto 25px;
+    color: #cbd5e1;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background: #172033;
+    border: 1px solid #334155;
+    padding: 15px 25px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    border-color: #38bdf8;
+    transform: translateY(-5px);
+}
+
+/* Projects */
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background: #172033;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #263449;
+    flex: 1 1 240px;
+    max-width: 350px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+}
+
+.project-card h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+.project-card span {
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    background: #111827;
+    text-align: center;
+    padding: 20px;
+    color: #94a3b8;
+}
+
+/* Mobile Responsive */
+@media (max-width: 650px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        text-align: center;
+        justify-content: center;
+        padding-top: 50px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .circle {
+        width: 180px;
+        height: 180px;
+    }
+
+    .circle span {
+        font-size: 42px;
+    }
+
+    .section {
+        padding: 50px 6%;
+    }
+}
